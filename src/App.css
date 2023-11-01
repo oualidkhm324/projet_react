@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-image: url('C:\Users\yass3\OneDrive\Documentos\react\my-app\public\images\b4.jpeg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  }
+
+.left-column {
+  flex: 0 1 88%;
+  margin-right: 20px;
+}
+
+.right-column {
+  flex: 0 1 88%;
+}
+.line {
+  border: none;
+  border-top: 2px solid rgb(120, 113, 243); 
+  width: 50%; 
+  margin: 20px auto;
+}
+
+/* App.css */
+/* ... Vos autres styles ... */
+
+.langues {
+  display: flex;
+  flex-direction: column;
+    padding: 20px;
+}
+.langue-item {
+  display: flex;
+  align-items: center; /* Aligne les éléments horizontalement au centre */
+}
+
+.langue-title {
+  font-size: 18px; 
+}
+
+.langue-line-short {
+  border: none;
+  border-top: 5px solid rgba(228, 79, 38, 0.788);
+  width: 10%; 
+  margin-left: 50px;
+}
+
+.langue-line-medium {
+  border: none;
+  border-top: 5px solid rgba(228, 79, 38, 0.788);
+  width: 15%; 
+  margin-left: 45px;
+}
+
+.langue-line-long {
+  border: none;
+  border-top: 5px solid rgba(228, 79, 38, 0.788);
+  width: 20%; 
+  margin-left: 60px;
+}
+
+
