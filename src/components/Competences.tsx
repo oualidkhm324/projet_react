@@ -1,14 +1,22 @@
-import {IoIosDoneAll} from 'react-icons/io'
+import React from "react";
+import { IoIosDoneAll } from "react-icons/io";
 
+interface CompetencesProps {
+  competences: string[];
+}
 
-export const Competences = () => {
-    return (
-<div >
-<h2 className="mt-10 text-xl font-extrabold">Compétences</h2>
-        <ul>
-            <li className='flex items-center '><IoIosDoneAll className='mr-2'/>HTML, CSS, JavaScript</li>
-            <li className='flex items-center '><IoIosDoneAll className='mr-2'/>MySQL</li>
-            <li className='flex items-center '><IoIosDoneAll className='mr-2'/>React, Node.js</li>
-            
-        </ul>
-</div>)}
+export const Competences: React.FC<CompetencesProps> = ({ competences }) => {
+  return (
+    <div>
+      <h2 className="mt-10 text-xl font-extrabold">Compétences</h2>
+      <ul>
+        {competences.map((competence, index) => (
+          <li key={index} className="flex items-center">
+            <IoIosDoneAll className="mr-2" />
+            {competence}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};

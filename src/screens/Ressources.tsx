@@ -7,24 +7,28 @@ import {Competences} from "../components/Competences"
 import { Langues } from "../components/Langues"
 
 export const CV = () => {
-    return(
-    <div className="container">
+    // Supposons que vous avez un tableau de compétences
+    const competences = ["HTML, CSS, JavaScript", "MySQL", "React, Node.js"];
+  
+    return (
+      <div className="container">
         <div className="left-column">
-        <Informations_Personnelles/>
-        <hr className="line" />
-        <Contact/>
-        <hr className="line" />
-        <Intérêts/>
-        <hr className="line" />
-        <Langues/></div>
-        <div className="right-column">
-        <Education/>
-        <hr className="line" />
-        <PProjetprofessionel/>
-        <hr className="line" />
-        <Competences/>
+          <Informations_Personnelles />
+          <hr className="line" />
+          <Contact />
+          <hr className="line" />
+          <Intérêts />
+          <hr className="line" />
+          <Langues />
         </div>
-    </div>
-           
-    )
-}
+        <div className="right-column">
+          <Education />
+          <hr className="line" />
+          <PProjetprofessionel />
+          <hr className="line" />
+          <Competences competences={competences} /> {/* Passez les compétences ici */}
+        </div>
+      </div>
+    );
+  };
+  

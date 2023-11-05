@@ -41,7 +41,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-image: url('C:\Users\yass3\OneDrive\Documentos\react\my-app\public\images\b4.jpeg');
+  background-image: url('C:\Users\yass3\OneDrive\Escritorio\react\my-app\public\images\b4.jpeg');
   background-size: cover; 
   background-repeat: no-repeat;
   }
@@ -78,6 +78,15 @@
   font-size: 18px; 
 }
 
+
+.langue-line-none {
+  border: none;
+  border-top: 5px solid rgba(228, 79, 38, 0.788);
+  width: 5%; 
+  margin-left: 60px;
+}
+
+
 .langue-line-short {
   border: none;
   border-top: 5px solid rgba(228, 79, 38, 0.788);
@@ -100,3 +109,42 @@
 }
 
 
+
+
+
+
+
+.langue-line-very-long{
+  border: none;
+  border-top: 5px solid rgba(228, 79, 38, 0.788);
+  width: 25%; 
+  margin-left: 60px;
+}
+
+
+.langue-line-super-long{
+  border: none;
+  border-top: 5px solid rgba(228, 79, 38, 0.788);
+  width: 30%; 
+  margin-left: 60px;
+}
+
+
+
+
+/* CSS pour positionner la ligne en haut à droite de chaque élément de langue */
+.langue-line-top-right {
+  border: none;
+  border-top: 5px solid rgba(228, 79, 38, 0.788);
+  width: 20%; /* Largeur de base */
+  margin-left: auto; /* Utilisez "margin-left: auto" pour placer la ligne à droite */
+}
+
+
+
+
+/* CSS pour l'arrière-plan blanc de la section des langues */
+.langues-section {
+  background-color: #FFFFFF; /* Utilisez la couleur blanche de fond */
+  padding: 20px; /* Ajoutez une marge pour l'espace autour de la section */
+}
